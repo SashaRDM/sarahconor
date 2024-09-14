@@ -1,0 +1,157 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 100px 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+header h2 {
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Navigation */
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Qualités */
+.qualites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.qualite {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.qualite:hover {
+    transform: scale(1.05);
+}
+
+.qualite h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.qualite p {
+    color: #fff;
+}
+
+/* Témoignages */
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.temoignage {
+    display: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.temoignage.active {
+    display: block;
+}
+
+.temoignage p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.temoignage span {
+    display: block;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .qualites-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
